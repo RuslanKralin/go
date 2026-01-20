@@ -4,12 +4,15 @@ import "fmt"
 
 
 func main() {
+var num int = 10
 
-fmt.Println(res(5, 2), res(5, 3))
+pointer := &num
+fmt.Println(pointer)
+fmt.Println(*pointer)
 }
 
 
 
-var res = func (a int, b int) int {
-    return a * b
+func qwe(a *int) {
+    *a = 20
 }
